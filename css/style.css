@@ -1,0 +1,109 @@
+:root{
+
+    --azul: #64FFFA;
+    --cinza: #707070;
+    --cinza-hover: #868686;
+}
+
+@font-face {
+    font-family: ocr;
+    src: url(/fonts/ocraextended.ttf);
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ocr;
+}
+
+.home{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 40px;
+}
+
+.logo a:hover{
+    color: var(--cinza-hover);
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .item{
+
+}
+
+.menu .item a{
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 20px;
+}
+
+.grafico{
+    margin-right: 10px;
+}
+
+.front-end{
+    margin-left: 10px;
+}
+
+.jobs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.jobs .job-card{
+    margin: 10px;
+}
+
+.jobs .job-card img{
+    max-width: 150px;
+    border-radius: 3px;
+}
+
+.contato{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+}
+
+.contato ul{
+    list-style-type:none;
+}
+
+.contato ul li{
+    margin-bottom: 5px;
+}
+
+.contato .contato-item a{
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+.contato .contato-item a:hover{
+    color: var(--cinza-hover);
+}
+
+
+
+
