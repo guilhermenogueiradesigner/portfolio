@@ -7,9 +7,9 @@
 
 @font-face {
     font-family: ocr;
-    src: url("/fonts/ocraextended.ttf") format("truetype"),
-         url("/fonts/OCRAEXT.TTF") format("truetype"),
-         url("/fonts/OCR\ A\ Extended\ Regular.ttf") format("truetype");
+    src: url("PORTFOLIO/fonts/ocraextended.ttf") format("truetype"),
+         url("PORTFOLIO/fonts/OCRAEXT.TTF") format("truetype"),
+         url("PORTFOLIO/fonts/OCR\ A\ Extended\ Regular.ttf") format("truetype");
  }
 
 *{
