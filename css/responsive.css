@@ -9,14 +9,15 @@
     .jobs .job-card img{
         border-radius: 5px;
     }
-
-    .contato ul{
-        margin-left: 12%; 
-    }
 }
 
-@media screen and (max-width:820px){
+@media screen and (max-width:750px){
     
+    .logo a{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
     .jobs{
         display: flex;
         flex-direction: column;
@@ -27,13 +28,9 @@
         max-width: 100%;
         border-radius: 5px;
     }
-
-    .contato ul{
-        margin-left: 12%; 
-    }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:550px){
     
     .home{
         height: 50px;
@@ -44,24 +41,15 @@
     }
 
     .logo a{
-        margin-left: 10px;
         font-size: 20px;
     }
 
     .menu{
         display: none;
     }
-
-    .contato ul{
-        margin-left: 10px; 
-    }
-
-    .contato .contato-item a{
-        font-size: 10px;
-    }
 }
 
-@media screen and (min-width:450px){
+@media screen and (min-width:550px){
     
     .hamburguer{
         display: none;
@@ -79,6 +67,17 @@
     }
 
     .logo a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:180px){
+    
+    .logo a{
         display: none;
+    }
+
+    .hamburguer{
+        margin: 0 auto;
     }
 }

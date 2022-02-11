@@ -16,11 +16,11 @@
 .home{
     top: 0;
     position: fixed;
-    height: 150px;
+    height: 50px;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--azul);
 }
@@ -28,8 +28,9 @@
 .logo a{
     text-decoration: none;
     color: var(--cinza);
+    margin-left: 10px;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .logo a:hover{
@@ -39,6 +40,7 @@
 .menu{
     display: flex;
     flex-direction: row;
+    margin-right: 10px;
 }
 
 .menu .item a{
@@ -65,18 +67,19 @@
 }
 
 .jobs{
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100%;
     display: flex;    
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content:center;
     align-items: center;
-}
-.jobs .job-card{
-    margin: 10px;
     -webkit-transition: ease-in 0.5s;
     -moz-transition: ease-in 0.5s;
     transition: ease-in 0.5s;
+}
+.jobs .job-card{
+    margin: 10px;
 }
 
 .jobs .job-card img{
@@ -88,18 +91,17 @@
 }
 
 .contato{
-    height: 200px;
+    height: 150px;
     width: 100%;
+    padding-left: 10px;
     display: flex;
-    flex-direction: column;
-    align-items:flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
     background-color: var(--azul);
 }
 
 .contato ul{
     list-style-type:none;
-    margin-left: 14%;
-    max-width: 80%;
 
 }
 
