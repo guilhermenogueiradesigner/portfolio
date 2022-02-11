@@ -5,21 +5,17 @@
     --cinza-hover: #868686;
 }
 
-@font-face {
-    font-family: ocr;
-    src: url("../PORTFOLIO/fonts/ocraextended.ttf") format("truetype"),
-         url("../PORTFOLIO/fonts/OCRAEXT.TTF") format("truetype"),
-         url("../PORTFOLIO/fonts/OCR\ A\ Extended\ Regular.ttf") format("truetype");
- }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ocr;
+    font-family: 'Roboto', sans-serif;
+    color: var(--cinza);
 }
 
 .home{
+    top: 0;
+    position: fixed;
     height: 150px;
     width: 100%;
     display: flex;
@@ -32,6 +28,7 @@
 .logo a{
     text-decoration: none;
     color: var(--cinza);
+    font-weight: 500;
     font-size: 40px;
 }
 
@@ -44,14 +41,15 @@
     flex-direction: row;
 }
 
-.menu .item{
-
-}
-
 .menu .item a{
     text-decoration: none;
     color: var(--cinza);
+    font-weight: 300;
     font-size: 20px;
+}
+
+.menu .item a:hover{
+    font-weight: 400;
 }
 
 .grafico{
@@ -62,38 +60,57 @@
     margin-left: 10px;
 }
 
+.hamburguer{
+    margin-right: 10px;
+}
+
 .jobs{
+    margin-top: 150px;
     width: 100%;
-    display: flex;
+    display: flex;    
     flex-direction: row;
     justify-content:center;
     align-items: center;
 }
 .jobs .job-card{
     margin: 10px;
+    -webkit-transition: ease-in 0.5s;
+    -moz-transition: ease-in 0.5s;
+    transition: ease-in 0.5s;
 }
 
 .jobs .job-card img{
-    max-width: 150px;
-    border-radius: 3px;
+    max-width: 300px;
+    border-radius: 4px;
+    -webkit-transition: ease-in 0.5s;
+    -moz-transition: ease-in 0.5s;
+    transition: ease-in 0.5s;
 }
 
 .contato{
     height: 200px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items:flex-start;
     background-color: var(--azul);
 }
 
 .contato ul{
     list-style-type:none;
+    margin-left: 14%;
+    max-width: 80%;
+
 }
 
 .contato ul li{
     margin-bottom: 5px;
+}
+
+.contato-titulo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .contato .contato-item a{

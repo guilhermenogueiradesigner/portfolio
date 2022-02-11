@@ -1,0 +1,84 @@
+@media screen and (max-width:1000px){
+    
+    .jobs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+    
+    .jobs .job-card img{
+        border-radius: 5px;
+    }
+
+    .contato ul{
+        margin-left: 12%; 
+    }
+}
+
+@media screen and (max-width:820px){
+    
+    .jobs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }  
+    
+    .jobs .job-card img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .contato ul{
+        margin-left: 12%; 
+    }
+}
+
+@media screen and (max-width:450px){
+    
+    .home{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo a{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .contato ul{
+        margin-left: 10px; 
+    }
+
+    .contato .contato-item a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:450px){
+    
+    .hamburguer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:280px){
+    
+    .home{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo a{
+        display: none;
+    }
+}
