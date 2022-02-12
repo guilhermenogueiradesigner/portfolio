@@ -11,10 +11,9 @@
     }
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:780px){
     
     .logo a{
-        margin-left: 10px;
         font-size: 20px;
     }
 
@@ -27,6 +26,17 @@
     .jobs .job-card img{
         max-width: 100%;
         border-radius: 5px;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+@media screen and (min-width:780px){
+    
+    .hamburguer{
+        display: none;
     }
 }
 
@@ -44,19 +54,9 @@
         font-size: 20px;
     }
 
-    .menu{
-        display: none;
-    }
 }
 
-@media screen and (min-width:550px){
-    
-    .hamburguer{
-        display: none;
-    }
-}
-
-@media screen and (max-width:280px){
+@media screen and (max-width:390px){
     
     .home{
         height: 50px;
@@ -67,11 +67,34 @@
     }
 
     .logo a{
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .contato ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .contato ul h3{
+        text-align: center;
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .contato ul li{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contato ul li h4{
+        display: none;
     }
 }
 
-@media screen and (max-width:180px){
+@media screen and (max-width:220px){
     
     .logo a{
         display: none;
