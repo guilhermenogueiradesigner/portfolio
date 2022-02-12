@@ -66,10 +66,6 @@
         align-items: center;
     }
 
-    .logo a{
-        font-size: 12px;
-    }
-
     .contato ul{
         display: flex;
         flex-direction: row;
@@ -80,6 +76,7 @@
 
     .contato ul h3{
         text-align: center;
+        font-size: 20px;
         margin: 0;
         margin-left: 5px;
         margin-right: 5px;

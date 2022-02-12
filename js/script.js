@@ -48,5 +48,11 @@ const mobileMenu = () => {
     frontEnd[0].style.textAlign = "center";
     frontEnd[0].style.margin = "0 auto"; 
 
-};
+}
 
+hamburguer[0].addEventListener("touchstart", (event) => {
+
+    mobileMenu();
+    console.log("touch ok!");
+
+}, false);
