@@ -53,6 +53,6 @@ const mobileMenu = () => {
 hamburguer[0].addEventListener("touchstart", (event) => {
 
     mobileMenu();
-    console.log("touch ok!");
+    alert("touch ok!");
 
 }, false);
