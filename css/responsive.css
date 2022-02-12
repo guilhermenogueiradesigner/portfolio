@@ -81,6 +81,7 @@
     .contato ul h3{
         text-align: center;
         margin: 0;
+        margin-left: 5px;
         margin-right: 5px;
     }
 
@@ -102,5 +103,9 @@
 
     .hamburguer{
         margin: 0 auto;
+    }
+
+    .contato ul h3{
+        display: none;
     }
 }
