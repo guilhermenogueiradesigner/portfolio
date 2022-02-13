@@ -2,6 +2,7 @@
     
     .jobs{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }  
@@ -38,6 +39,12 @@
     .hamburguer{
         display: none;
     }
+
+    .jobs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
 }
 
 @media screen and (max-width:550px){
