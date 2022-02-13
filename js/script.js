@@ -8,12 +8,15 @@ var sobre = document.getElementsByClassName("sobre");
 var grafico = document.getElementsByClassName("grafico");
 var diagramacao = document.getElementsByClassName("diagramacao");
 var frontEnd = document.getElementsByClassName("front-end");
+var jobs = document.getElementsByClassName("jobs");
+var jobCard = document.getElementsByClassName("job-card");
 
+//Menu mobile
 const mobileMenu = () => {
     
     logo[0].style.display = "none";
 
-    hamburguer[0].children[0].src = "img/teste.svg";
+    hamburguer[0].children[0].src = "img/exit.svg";
     hamburguer[0].style.marginTop = "10px";
     hamburguer[0].style.marginBottom = "20px";
     
@@ -50,8 +53,78 @@ const mobileMenu = () => {
 
 }
 
+/*Touch IO
 hamburguer[0].addEventListener("touchstart", (event) => {
 
     mobileMenu();
 
-}, false);
+}, false);*/
+
+//Criação dos Job Cards 
+const cards = [
+    {
+        id: "1",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto1.jpg"
+    },
+    {
+        id: "2",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto2.jpg"
+    },
+    {
+        id: "3",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto3.jpg"
+    },
+    {
+        id: "4",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto4.jpg"
+    },
+    {
+        id: "5",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto5.jpg"
+    },
+    {
+        id: "6",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto6.jpg"
+    },
+    {
+        id: "7",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto7.jpg"
+    },
+    {
+        id: "8",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto8.jpg"
+    },
+    {
+        id: "9",
+        name: "foto1",
+        descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        src: "img/foto9.jpg"
+    }
+]
+
+//Clonando job cards
+cards.map(job => { 
+
+    const clone = jobCard[0].cloneNode(true);
+    clone.setAttribute("id", job.id);
+    clone.querySelector("img").src = job.src;
+    jobs[0].appendChild(clone);
+});
+
+jobCard[0].remove();
