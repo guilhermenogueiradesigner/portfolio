@@ -10,6 +10,7 @@ var diagramacao = document.getElementsByClassName("diagramacao");
 var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
+var openCardState = false;
 
 //Menu mobile
 const mobileMenu = () => {
@@ -27,17 +28,10 @@ const mobileMenu = () => {
     home[0].style.justifyContent = "flex-start";
     home[0].style.height = "100%";
 
-    menuItens[0].style.margin = "0 auto";
-    menuItens[0].style.marginBottom = "15px";
-
-    menuItens[1].style.margin = "0 auto";
-    menuItens[1].style.marginBottom = "15px";
-
-    menuItens[2].style.margin = "0 auto";
-    menuItens[2].style.marginBottom = "15px";
-
-    menuItens[3].style.margin = "0 auto";
-    menuItens[3].style.marginBottom = "15px";
+    for (const menuItem of menuItens) {
+        menuItem.style.margin = "0 auto";
+        menuItem.style.marginBottom = "15px";
+    }
 
     sobre[0].style.textAlign = "center";
     sobre[0].style.margin = "0 auto";
@@ -59,54 +53,63 @@ const cards = [
         id: "1",
         title: "foto1",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
         src: "img/foto1.jpg"
     },
     {
         id: "2",
         title: "foto2",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto2.jpg"
     },
     {
         id: "3",
         title: "foto3",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "front-end",
         src: "img/foto3.jpg"
     },
     {
         id: "4",
         title: "foto4",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto4.jpg"
     },
     {
         id: "5",
         title: "foto5",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto5.jpg"
     },
     {
         id: "6",
         title: "foto6",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto6.jpg"
     },
     {
         id: "7",
         title: "foto7",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto7.jpg"
     },
     {
         id: "8",
         title: "foto8",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto8.jpg"
     },
     {
         id: "9",
         title: "foto9",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
         src: "img/foto9.jpg"
     }
 ]
@@ -116,6 +119,7 @@ cards.map(job => {
 
     const clone = jobCard[0].cloneNode(true);
     clone.setAttribute("id", job.id);
+    clone.setAttribute("jobType", job.jobType);
     clone.querySelector("img").src = job.src;
     jobs[0].appendChild(clone);
 });
@@ -131,9 +135,15 @@ let openCard = (cardId) => {
     let infoDescription = document.createElement("p");
     let info = cards.find((card) => card.id == cardId);
 
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+
     viewCardById(cardId);
 
-    jobs[0].style.backgroundColor = "#868686";
+    jobs[0].style.backgroundColor = "#dfdfdf";
     jobs[0].style.borderRadius = "5px";
 
     cardInfo.appendChild(infoTitle);
@@ -149,13 +159,9 @@ let openCard = (cardId) => {
     openedCard.appendChild(cardInfo);
 
     console.log(window.innerWidth);
-
-    if(window.innerWidth > 780){
-        openedCard.style.flexDirection = "row";
-    }
-    else{
-        openedCard.style.flexDirection = "column";
-    } 
+    
+    openedCard.setAttribute("onclick","");
+    openedCard.setAttribute("class","job-opened-card");
 
 };
 
@@ -168,6 +174,21 @@ let viewCardById = (cardId) => {
         }
 
     }
+
+};
+
+let viewCardByjobType = (jobType) => {
+    
+    for (const card of jobCard) {
+        
+        card.style.display = "flex";
+
+        if(card.getAttribute("jobtype") != jobType){
+            card.style.display = "none";
+        }
+
+    }
+    
 
 };
 

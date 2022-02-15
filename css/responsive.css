@@ -10,6 +10,7 @@
     .jobs .job-card img{
         border-radius: 5px;
     }
+
 }
 
 @media screen and (max-width:780px){
@@ -25,6 +26,18 @@
     }  
     
     .jobs .job-card img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .jobs .job-opened-card img{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .jobs .job-opened-card img{
+        width: 100%;
         max-width: 100%;
         border-radius: 5px;
     }

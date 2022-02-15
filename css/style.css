@@ -41,27 +41,52 @@
     flex-direction: row;
 }
 
-.menu .item a{
-    text-decoration: none;
+.sobre{
     color: var(--cinza);
+    margin-left: 10px;
     font-weight: 300;
     font-size: 20px;
 }
 
-.menu .item a:hover{
+.sobre:hover{
     font-weight: 400;
-}
-
-.sobre{
-    margin-right: 10px;
+    cursor: pointer;
 }
 
 .grafico{
-    margin-right: 10px;
+    color: var(--cinza);
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.grafico:hover{
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.diagramacao{
+    color: var(--cinza);
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.menu .diagramacao:hover{
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .front-end{
+    color: var(--cinza);
     margin-left: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.menu .front-end:hover{
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .hamburguer{
@@ -99,16 +124,23 @@
     transition: ease-out 0.2s;
 }
 
+.jobs .job-opened-card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobs .job-opened-card img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
 .jobs .job-card:hover img{
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-
-.jobs .job-info{
-    
 }
 
 .contato{
@@ -155,6 +187,23 @@
     font-weight: 300;
 }
 
+.card-info{
 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 5px solid var(--cinza);
 
+}
 
+.info-title{
+
+    color: var(--cinza);
+
+}
+
+.info-description{
+
+    color: var(--cinza);
+
+}
