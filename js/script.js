@@ -10,6 +10,8 @@ var diagramacao = document.getElementsByClassName("diagramacao");
 var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
+var openedCard;
+var currentCardId = "";
 var openCardState = false;
 
 //Menu mobile
@@ -45,9 +47,14 @@ const mobileMenu = () => {
     frontEnd[0].style.textAlign = "center";
     frontEnd[0].style.margin = "0 auto"; 
 
+    hamburguer[0].setAttribute("onclick","returnHome()");
+
 }
 
-//Criação dos Job Cards 
+//Retorna à página inicial
+const returnHome = () => window.location.href = "index.html";
+
+//Informações dos Job Cards 
 const cards = [
     {
         id: "1",
@@ -129,7 +136,7 @@ jobCard[0].remove();
 //Função para abrir um card
 let openCard = (cardId) => {
     
-    let openedCard = document.getElementById(cardId);    
+    openedCard = document.getElementById(cardId);    
     let cardInfo = document.createElement("div");
     let infoTitle = document.createElement("h2");
     let infoDescription = document.createElement("p");
@@ -157,15 +164,17 @@ let openCard = (cardId) => {
     infoDescription.innerHTML = info.description;
 
     openedCard.appendChild(cardInfo);
-
-    console.log(window.innerWidth);
     
     openedCard.setAttribute("onclick","");
     openedCard.setAttribute("class","job-opened-card");
 
 };
 
+//Mostra o card aberto.
 let viewCardById = (cardId) => {
+
+    //Seta o card aberto
+    currentCardId = cardId;
 
     for (const card of jobCard) {
         
@@ -177,8 +186,23 @@ let viewCardById = (cardId) => {
 
 };
 
+//Mostra todos os cards da mesma categoria.
 let viewCardByjobType = (jobType) => {
     
+    //Esconde card aberto anteriormente se houver.
+    if(openedCard){
+
+        openedCard.removeChild(openedCard.children[1]);
+        //openedCard.style.display = "none";
+
+        openedCard.setAttribute("onclick","openCard(this.id)");
+        openedCard.setAttribute("class","job-card");
+        openedCard = undefined;
+    }
+
+    jobs[0].style.backgroundColor = "white";
+    jobs[0].style.borderRadius = "0";
+
     for (const card of jobCard) {
         
         card.style.display = "flex";
@@ -191,4 +215,3 @@ let viewCardByjobType = (jobType) => {
     
 
 };
-

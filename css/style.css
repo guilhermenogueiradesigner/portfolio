@@ -3,6 +3,7 @@
     --azul: #64FFFA;
     --cinza: #707070;
     --cinza-hover: #868686;
+    --cinza-opened-card: #dfdfdf;
 }
 
 *{
@@ -91,6 +92,10 @@
 
 .hamburguer{
     margin-right: 10px;
+}
+
+.hamburguer:hover{
+    cursor: pointer;
 }
 
 .hamburguer:active .menu{
