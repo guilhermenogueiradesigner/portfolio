@@ -24,24 +24,30 @@ const mobileMenu = () => {
     hamburguer[0].style.marginTop = "10px";
     hamburguer[0].style.marginBottom = "20px";
     
-    menu[0].style.display = "flex";
-    menu[0].style.flexDirection = "column";
-    menu[0].style.justifyContent = "space-between"
-    menu[0].style.marginBottom = "30px"
+    setTimeout(() => {
 
-    
+        menu[0].style.display = "flex";
+        menu[0].style.flexDirection = "column";
+        menu[0].style.justifyContent = "space-between"
+        menu[0].style.marginBottom = "30px";
+
+    }, 500);  
+
     home[0].style.flexDirection = "column";
     home[0].style.justifyContent = "flex-start";
-    home[0].style.height = "100%";
+    home[0].style.height = "200px";
 
     sobre[0].style.textAlign = "center";
     sobre[0].style.margin = "0 auto";
+    sobre[0].style.marginBottom = "10px";
     
     grafico[0].style.textAlign = "center";
     grafico[0].style.margin = "0 auto";
+    grafico[0].style.marginBottom = "10px";
     
     diagramacao[0].style.textAlign = "center";
     diagramacao[0].style.margin = "0 auto";
+    diagramacao[0].style.marginBottom = "10px";
 
     frontEnd[0].style.textAlign = "center";
     frontEnd[0].style.margin = "0 auto"; 
