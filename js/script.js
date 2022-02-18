@@ -10,6 +10,7 @@ var diagramacao = document.getElementsByClassName("diagramacao");
 var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
+var sobrePage = document.getElementsByClassName("sobre-page");
 var openedCard;
 var currentCardId = "";
 var openCardState = false;
@@ -25,15 +26,13 @@ const mobileMenu = () => {
     
     menu[0].style.display = "flex";
     menu[0].style.flexDirection = "column";
+    menu[0].style.justifyContent = "space-between"
+    menu[0].style.marginBottom = "30px"
+
     
     home[0].style.flexDirection = "column";
     home[0].style.justifyContent = "flex-start";
     home[0].style.height = "100%";
-
-    for (const menuItem of menuItens) {
-        menuItem.style.margin = "0 auto";
-        menuItem.style.marginBottom = "15px";
-    }
 
     sobre[0].style.textAlign = "center";
     sobre[0].style.margin = "0 auto";
@@ -47,12 +46,28 @@ const mobileMenu = () => {
     frontEnd[0].style.textAlign = "center";
     frontEnd[0].style.margin = "0 auto"; 
 
-    hamburguer[0].setAttribute("onclick","returnHome()");
+    hamburguer[0].setAttribute("onclick","closedMenu()");
 
 }
 
 //Retorna à página inicial
-const returnHome = () => window.location.href = "index.html";
+const closedMenu = () => {
+    
+    menu[0].style.display = "none";
+
+    home[0].style.height = "50px";
+    home[0].style.flexDirection = "row";
+    home[0].style.justifyContent = "space-between";
+    home[0].style.alignItens = "center";
+    
+    hamburguer[0].children[0].src = "img/menu.svg";
+    hamburguer[0].style.marginTop = "0";
+    hamburguer[0].style.marginBottom = "0";
+
+    logo[0].style.display = "flex";
+
+    hamburguer[0].setAttribute("onclick","mobileMenu()");
+}
 
 //Informações dos Job Cards 
 const cards = [
@@ -189,6 +204,10 @@ let viewCardById = (cardId) => {
 //Mostra todos os cards da mesma categoria.
 let viewCardByjobType = (jobType) => {
     
+    //Esconde página Sobre se estiver aberta
+    sobrePage[0].style.display = "none";
+    jobs[0].style.display = "flex";
+
     //Esconde card aberto anteriormente se houver.
     if(openedCard){
 
@@ -214,4 +233,25 @@ let viewCardByjobType = (jobType) => {
     }
     
 
+};
+
+let viewAbout = () => {
+
+    jobs[0].style.display = "none";
+    sobrePage[0].style.display = "flex";
+
+    sobrePage[0].style.marginTop = "50px";
+    sobrePage[0].style.marginBotton = "50px";
+    sobrePage[0].style.marginLeft = "10%";
+    sobrePage[0].style.marginRight = "10%";
+
+    /*
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: row;
+    */
 };
