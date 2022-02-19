@@ -146,6 +146,10 @@
     .contato ul li h4{
         display: none;
     }
+
+    .contato ul li a i{
+        font-size: xx-large;
+    }
 }
 
 @media screen and (max-width:220px){
