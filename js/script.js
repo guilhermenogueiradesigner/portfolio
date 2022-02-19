@@ -11,6 +11,7 @@ var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
 var sobrePage = document.getElementsByClassName("sobre-page");
+var skills = document.getElementsByClassName("skills");
 var openedCard;
 var currentCardId = "";
 var openCardState = false;
@@ -21,7 +22,7 @@ const mobileMenu = () => {
     logo[0].style.display = "none";
 
     hamburguer[0].children[0].src = "img/exit.svg";
-    hamburguer[0].style.marginTop = "10px";
+    hamburguer[0].style.marginTop = "20px";
     hamburguer[0].style.marginBottom = "20px";
     
     setTimeout(() => {
@@ -35,7 +36,7 @@ const mobileMenu = () => {
 
     home[0].style.flexDirection = "column";
     home[0].style.justifyContent = "flex-start";
-    home[0].style.height = "200px";
+    home[0].style.height = "220px";
 
     sobre[0].style.textAlign = "center";
     sobre[0].style.margin = "0 auto";
@@ -241,23 +242,73 @@ let viewCardByjobType = (jobType) => {
 
 };
 
+//Página Sobre
 let viewAbout = () => {
 
     jobs[0].style.display = "none";
     sobrePage[0].style.display = "flex";
 
     sobrePage[0].style.marginTop = "50px";
-    sobrePage[0].style.marginBotton = "50px";
+    sobrePage[0].style.marginBottom = "50px";
     sobrePage[0].style.marginLeft = "10%";
     sobrePage[0].style.marginRight = "10%";
 
-    /*
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 50px;
-    display: flex;    
-    flex-wrap: wrap;
-    flex-direction: row;
-    */
 };
+
+//Informações das Skills
+const infoSkills = [{
+    name: "Photoshop",
+    level: 4
+},
+{
+    name: "InDesign",
+    level: 4
+},
+{
+    name: "Illustrator",
+    level: 3
+},
+{
+    name: "Premiere Pro",
+    level: 2
+},
+{
+    name: "Adobe XD",
+    level: 1
+},
+{
+    name: "HTML 5",
+    level: 3
+},
+{
+    name: "CSS 3",
+    level: 3
+},
+{
+    name: "Javascript",
+    level: 3
+},
+{
+    name: "React",
+    level: 1
+}
+];
+
+//Clonando as skills
+infoSkills.map(skill => { 
+
+    let skillItem = document.getElementsByClassName("skill-item");
+
+    const clone = skillItem[0].cloneNode(true);
+    
+    clone.children[0].innerHTML = skill.name;
+
+    for(let i = 0; i < skill.level; i++) {
+        clone.children[1].children[i].style.backgroundColor = "#1f2041";    
+    }
+
+    skills[0].appendChild(clone);
+});
+
+//Removendo o molde de skill
+skills[0].children[1].remove();

@@ -53,11 +53,28 @@
     .perfil{
         width: 100%;
         max-width: 100%;
+        margin-bottom: 50px;
     }
 
     .foto-perfil{
         width: 100%;
         max-width: 100%;
+    }
+
+    .resumo{
+        margin-left: 0px;
+    }
+
+    @keyframes resumo_slidein {
+        from {
+          margin-left: 40%;
+          opacity: 0;
+        }
+      
+        to {
+          margin-left: 0%;
+          opacity: 1;
+        }
     }
 
 }
