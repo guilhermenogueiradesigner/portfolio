@@ -259,39 +259,55 @@ let viewAbout = () => {
 const infoSkills = [{
     name: "Photoshop",
     level: 4
-},
-{
-    name: "InDesign",
-    level: 4
-},
-{
-    name: "Illustrator",
-    level: 3
-},
-{
-    name: "Premiere Pro",
-    level: 2
-},
-{
-    name: "Adobe XD",
-    level: 1
-},
-{
-    name: "HTML 5",
-    level: 3
-},
-{
-    name: "CSS 3",
-    level: 3
-},
-{
-    name: "Javascript",
-    level: 3
-},
-{
-    name: "React",
-    level: 1
-}
+    },
+    {
+        name: "InDesign",
+        level: 4
+    },
+    {
+        name: "Illustrator",
+        level: 3
+    },
+    {
+        name: "Premiere Pro",
+        level: 2
+    },
+    {
+        name: "Adobe XD",
+        level: 1
+    },
+    {
+        name: "HTML 5",
+        level: 3
+    },
+    {
+        name: "CSS 3",
+        level: 3
+    },
+    {
+        name: "Javascript",
+        level: 3
+    },
+    {
+        name: "React",
+        level: 1
+    },
+    {
+        name: "Database/ SQL",
+        level: 2
+    },
+    {
+        name: "Excel",
+        level: 3
+    },
+    {
+        name: "Word",
+        level: 2
+    },
+    {
+        name: "Powerpoint",
+        level: 2
+    },
 ];
 
 //Clonando as skills
