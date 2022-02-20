@@ -13,6 +13,8 @@ var jobCard = document.getElementsByClassName("job-card");
 var sobrePage = document.getElementsByClassName("sobre-page");
 var skills = document.getElementsByClassName("skills");
 var openedCard;
+var currentScrollBar = 0;
+var currentJobType = "all";
 var currentCardId = "";
 var openCardState = false;
 
@@ -145,20 +147,20 @@ const cards = [
 
 //Clonando job cards
 cards.map(job => { 
-
-    const clone = jobCard[0].cloneNode(true);
-    clone.setAttribute("id", job.id);
-    clone.setAttribute("jobType", job.jobType);
-    clone.querySelector("img").src = job.src;
-    jobs[0].appendChild(clone);
-});
-
+        const clone = jobCard[0].cloneNode(true);
+        clone.setAttribute("id", job.id);
+        clone.setAttribute("jobType", job.jobType);
+        clone.querySelector("img").src = job.src;
+        jobs[0].appendChild(clone);
+});        
+    
 jobCard[0].remove();
 
 //Função para abrir um card
 let openCard = (cardId) => {
-    
+
     openedCard = document.getElementById(cardId);    
+
     let cardInfo = document.createElement("div");
     let infoTitle = document.createElement("h2");
     let infoDescription = document.createElement("p");
@@ -168,7 +170,7 @@ let openCard = (cardId) => {
         top: 0,
         left: 0,
         behavior: 'smooth'
-      });
+    });
 
     viewCardById(cardId);
 
@@ -211,6 +213,8 @@ let viewCardById = (cardId) => {
 //Mostra todos os cards da mesma categoria.
 let viewCardByjobType = (jobType) => {
     
+    currentJobType = jobType;
+
     //Esconde página Sobre se estiver aberta
     sobrePage[0].style.display = "none";
     jobs[0].style.display = "flex";
