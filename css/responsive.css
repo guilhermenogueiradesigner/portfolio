@@ -19,7 +19,7 @@
 
 }
 
-@media screen and (max-width:830px){
+@media screen and (max-width:900px){
     
     .logo a{
         font-size: 20px;
@@ -94,7 +94,7 @@
 
 }
 
-@media screen and (min-width:831px){
+@media screen and (min-width:901px){
     
     .menu{
         height: 100%;
@@ -132,7 +132,7 @@
 
 }
 
-@media screen and (max-width:390px){
+@media screen and (max-width:420px){
     
     .home{
         height: 50px;
@@ -143,6 +143,9 @@
         
     }
 
+    .a-logo p{
+        font-size: 12px;
+    }
     .contato{
         height: 120px;
     }
@@ -182,7 +185,7 @@
     }
 }
 
-@media screen and (max-width:280px){
+@media screen and (max-width:300px){
     
     .logo a{
         display: none;

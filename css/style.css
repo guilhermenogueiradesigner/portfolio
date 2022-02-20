@@ -51,6 +51,19 @@
     color: var(--cinza-hover);
 }
 
+.logo a p{
+    font-family: 'Kalam', cursive;
+    font-weight:200;
+    font-size: 22px;
+}
+
+.a-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu{
     height: 100%;
     display: flex;
