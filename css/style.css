@@ -43,8 +43,9 @@
     display: flex;
     text-decoration: none;
     color: var(--cinza);
+    font-family: 'Kalam', cursive;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .logo a:hover{
