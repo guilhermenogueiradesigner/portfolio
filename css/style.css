@@ -131,10 +131,6 @@
     cursor: pointer;
 }
 
-.hamburguer{
-    margin-right: 10px;
-}
-
 .hamburguer:hover{
     cursor: pointer;
 }
@@ -350,7 +346,7 @@
 }
 
 .resumo h2{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .resumo h3{
@@ -372,11 +368,11 @@
 }
 
 .resumo .resumo-period{
-    width: 150px;
-    margin-top: 5px;
+    width: 130px;
+    margin-top: 2px;
     padding: 2px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     border-radius: 10px;
     background-color: var(--cinza);
