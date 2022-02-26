@@ -23,7 +23,7 @@ const mobileMenu = () => {
     
     logo[0].style.display = "none";
 
-    hamburguer[0].children[0].src = "img/exit.svg";
+    hamburguer[0].children[0].src = "/img/icones/exit.svg";
     hamburguer[0].style.marginTop = "20px";
     hamburguer[0].style.marginBottom = "20px";
     
@@ -69,7 +69,7 @@ const closedMenu = () => {
     home[0].style.justifyContent = "space-between";
     home[0].style.alignItens = "center";
     
-    hamburguer[0].children[0].src = "img/menu.svg";
+    hamburguer[0].children[0].src = "/img/icones/menu.svg";
     hamburguer[0].style.marginTop = "0";
     hamburguer[0].style.marginBottom = "0";
 
@@ -84,64 +84,190 @@ const cards = [
         id: "1",
         title: "foto1",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        jobType: "grafico",
-        src: "img/foto1.jpg"
+        jobType: "diagramacao",
+        src: "img/trabalhos/1.jpg"
     },
     {
         id: "2",
         title: "foto2",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        jobType: "diagramacao",
-        src: "img/foto2.jpg"
+        jobType: "digital",
+        src: "img/trabalhos/2.jpg"
     },
     {
         id: "3",
         title: "foto3",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        jobType: "front-end",
-        src: "img/foto3.jpg"
+        jobType: "grafico",
+        src: "img/trabalhos/3.jpg"
     },
     {
         id: "4",
         title: "foto4",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        jobType: "diagramacao",
-        src: "img/foto4.jpg"
+        jobType: "grafico",
+        src: "img/trabalhos/4.jpg"
     },
     {
         id: "5",
         title: "foto5",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
-        src: "img/foto5.jpg"
+        src: "img/trabalhos/5.jpg"
     },
     {
         id: "6",
         title: "foto6",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        jobType: "diagramacao",
-        src: "img/foto6.jpg"
+        jobType: "grafico",
+        src: "img/trabalhos/6.jpg"
     },
     {
         id: "7",
         title: "foto7",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        jobType: "diagramacao",
-        src: "img/foto7.jpg"
+        jobType: "grafico",
+        src: "img/trabalhos/7.jpg"
     },
     {
         id: "8",
         title: "foto8",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
-        src: "img/foto8.jpg"
+        src: "img/trabalhos/8.jpg"
     },
     {
         id: "9",
         title: "foto9",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
-        src: "img/foto9.jpg"
+        src: "img/trabalhos/9.jpg"
+    },
+    {
+        id: "10",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/10.jpg"
+    },
+    {
+        id: "11",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "digital",
+        src: "img/trabalhos/11.jpg"
+    },
+    {
+        id: "12",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/12.jpg"
+    },
+    {
+        id: "13",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/13.jpg"
+    },
+    {
+        id: "14",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/14.jpg"
+    },
+    {
+        id: "15",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/15.jpg"
+    },
+    {
+        id: "16",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/16.jpg"
+    },
+    {
+        id: "17",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/17.jpg"
+    },
+    {
+        id: "18",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/18.jpg"
+    },
+    {
+        id: "19",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/19.jpg"
+    },
+    {
+        id: "20",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "digital",
+        src: "img/trabalhos/20.jpg"
+    },
+    {
+        id: "21",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/21.jpg"
+    },
+    {
+        id: "22",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "digital",
+        src: "img/trabalhos/22.jpg"
+    },
+    {
+        id: "23",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/23.jpg"
+    },
+    {
+        id: "24",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/24.jpg"
+    },
+    {
+        id: "25",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "diagramacao",
+        src: "img/trabalhos/25.jpg"
+    },
+    {
+        id: "26",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "digital",
+        src: "img/trabalhos/26.jpg"
+    },
+    {
+        id: "27",
+        title: "foto9",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        jobType: "grafico",
+        src: "img/trabalhos/27.jpg"
     }
 ]
 
