@@ -175,6 +175,7 @@
 .jobs .job-opened-card img{
     max-width: 100%;
     border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .jobs .job-card:hover img{
@@ -246,15 +247,17 @@
 .card-info{
 
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding-left: 15px;
-    border-left: 5px solid var(--cinza);
+    border-left: 10px solid var(--cinza);
 
 }
 
 .info-title{
 
     color: var(--cinza);
+    margin-bottom: 15px;
+    font-size: 50px;
 
 }
 
@@ -296,8 +299,15 @@
     margin-bottom: 20px;
 }
 
+.skills{
+    margin-top: 40px;
+}
+
 .skills h3{
     font-size: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    background-color: var(--azul);
 }
 
 .skill-item{
@@ -326,6 +336,42 @@
     height: 5px;
     border-radius: 5px;
     background-color: #868686;
+}
+
+.msg-group{
+    margin-top: 60px;
+}
+
+.msg-group h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: var(--azul);
+}
+
+.msg-card{
+    padding: 20px;
+    background-color: var(--cinza-opened-card);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.msg-aspas{
+    font-size: 80px;
+}
+
+.msg-text{
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.msg-client{
+    font-size: 14px;
+}
+
+.msg-project{
+    font-size: 12px;
 }
 
 .resumo {
