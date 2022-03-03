@@ -24,7 +24,7 @@ const mobileMenu = () => {
     
     logo[0].style.display = "none";
 
-    hamburguer[0].children[0].src = "/img/icones/exit.svg";
+    hamburguer[0].children[0].src = "img/icones/exit.svg";
     hamburguer[0].style.marginTop = "20px";
     hamburguer[0].style.marginBottom = "20px";
     
