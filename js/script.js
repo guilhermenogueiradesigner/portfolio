@@ -499,8 +499,11 @@ let changeJob = (direction) => {
 //Página Sobre
 let viewAbout = () => {
 
-    openedCard.setAttribute("onclick","openCard(this.id)");
-    openedCard.setAttribute("class","job-card");
+    if(openedCard){
+        openedCard.setAttribute("onclick","openCard(this.id)");
+        openedCard.setAttribute("class","job-card");
+    }
+    
 
     changeBtn[0].style.display = "none";
     changeBtn[1].style.display = "none";
