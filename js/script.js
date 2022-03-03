@@ -10,6 +10,7 @@ var diagramacao = document.getElementsByClassName("diagramacao");
 var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
+var changeBtn = document.getElementsByClassName("change-btn");
 var sobrePage = document.getElementsByClassName("sobre-page");
 var skills = document.getElementsByClassName("skills");
 var msgGroup = document.getElementsByClassName("msg-group");
@@ -70,7 +71,7 @@ const closedMenu = () => {
     home[0].style.justifyContent = "space-between";
     home[0].style.alignItens = "center";
     
-    hamburguer[0].children[0].src = "/img/icones/menu.svg";
+    hamburguer[0].children[0].src = "img/icones/menu.svg";
     hamburguer[0].style.marginTop = "0";
     hamburguer[0].style.marginBottom = "0";
 
@@ -108,7 +109,8 @@ const cards = [
         src: "img/trabalhos/3.jpg",
         src_group: [
             "img/trabalhos/3a.png",
-            "img/trabalhos/3b.png"
+            "img/trabalhos/3b.png",
+            "img/trabalhos/3c.jpg"
         ]
     },
     {
@@ -353,7 +355,13 @@ jobCard[0].remove();
 //Função para abrir um card
 let openCard = (cardId) => {
 
-    openedCard = document.getElementById(cardId);    
+    changeBtn[0].style.display = "flex";
+    changeBtn[0].style.justifyContent = "space-between";
+
+    changeBtn[1].style.display = "flex";
+    changeBtn[1].style.justifyContent = "space-between";
+    
+    openedCard = document.getElementById(cardId);
 
     let cardInfo = document.createElement("div");
     let infoTitle = document.createElement("h2");
@@ -396,6 +404,8 @@ let openCard = (cardId) => {
 
     openedCard.appendChild(cardInfo);
     openedCard.appendChild(imgGroup);
+
+    openedCard.style.display = "flex";
     
     openedCard.setAttribute("onclick","");
     openedCard.setAttribute("class","job-opened-card");
@@ -425,6 +435,7 @@ let viewCardByjobType = (jobType) => {
 
     //Esconde página Sobre se estiver aberta
     sobrePage[0].style.display = "none";
+    changeBtn[0].style.display = "none";
     jobs[0].style.display = "flex";
 
     //Esconde card aberto anteriormente se houver.
@@ -451,11 +462,48 @@ let viewCardByjobType = (jobType) => {
 
     }
     
+};
+
+//Navegando pelos trabalhos com botões de navegação
+let changeJob = (direction) => {
+
+    let id = openedCard.id;
+
+    if(direction == "left"){
+        if(id >= 2){
+            id--;
+        }
+        
+        openedCard.style.display = "none";
+        openedCard.children[1].remove();
+        openedCard.children[1].remove();
+        openedCard.setAttribute("onclick","openCard(this.id)");
+        openedCard.setAttribute("class","job-card");        
+        openCard(id);
+    }
+    else if(direction == "right"){
+        if(id < cards.length){
+            id++;
+        }
+
+        openedCard.style.display = "none";
+        openedCard.children[1].remove();
+        openedCard.children[1].remove();
+        openedCard.setAttribute("onclick","openCard(this.id)");
+        openedCard.setAttribute("class","job-card");
+        openCard(id);
+    }
 
 };
 
 //Página Sobre
 let viewAbout = () => {
+
+    openedCard.setAttribute("onclick","openCard(this.id)");
+    openedCard.setAttribute("class","job-card");
+
+    changeBtn[0].style.display = "none";
+    changeBtn[1].style.display = "none";
 
     jobs[0].style.display = "none";
     sobrePage[0].style.display = "flex";

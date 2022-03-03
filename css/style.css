@@ -17,6 +17,7 @@
 .home{
     width: 100%;
     height: 50px;
+    margin-bottom: 50px;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
@@ -131,19 +132,54 @@
     cursor: pointer;
 }
 
+.hamburguer{
+    width: 20px;
+    height: 20px;
+}
+
 .hamburguer:hover{
     cursor: pointer;
 }
 
 .hamburguer:active .menu{
     display: flex;
-} 
+}
 
-.jobs{
-    margin-top: 50px;
+.change-btn{
+    display: none;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.back{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back h3{
+    padding-left: 5px;
+}
+
+.next{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.next h3{
+    padding-right: 5px;
+}
+
+.jobs{
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;    
     flex-wrap: wrap;
     flex-direction: row;
@@ -189,6 +225,7 @@
 .contato{
     height: 200px;
     width: 100%;
+    margin-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 30px;
