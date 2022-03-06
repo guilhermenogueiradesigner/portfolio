@@ -3,6 +3,7 @@
     --azul: #64FFFA;
     --cinza: #707070;
     --cinza-hover: #868686;
+    --cinza-bg: #b4b4b4;
     --cinza-opened-card: #dfdfdf;
 }
 
@@ -333,7 +334,23 @@
 }
 
 .foto-perfil{
-    margin-bottom: 20px;
+    background-color: var(--azul);
+}
+
+.foto-perfil img{
+    width: 100%;
+}
+
+.name{
+    width: 200px;
+    height: 56px;
+    padding-top: 10px;
+    background-color: var(--cinza);
+}
+
+.name p{
+    padding-left: 10px;
+    color: white;
 }
 
 .skills{
@@ -341,14 +358,15 @@
 }
 
 .skills h3{
+    max-height: 26px;
     font-size: 30px;
-    margin-bottom: 30px;
-    padding-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
     background-color: var(--azul);
 }
 
 .skill-item{
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -376,18 +394,22 @@
 }
 
 .msg-group{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .msg-group h3{
+    max-height: 26px;
     font-size: 30px;
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: var(--azul);
 }
 
 .msg-card{
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: var(--cinza-opened-card);
     margin-bottom: 20px;
     border-radius: 5px;
@@ -420,6 +442,7 @@
 .resumo .presentation{
     font-weight: 300;
     background-color: #dfdfdf;
+    border-bottom: solid 20px var(--azul);
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
