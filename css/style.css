@@ -62,7 +62,7 @@
 
 .a-logo h1{
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .a-logo img{
@@ -298,15 +298,25 @@
 .info-title{
 
     color: var(--cinza);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 50px;
 
 }
 
 .info-description{
-
+    font-size: 20px;
     color: var(--cinza);
 
+}
+
+.info-job-class{
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.info-tools{
+    margin-top: 10px;
+    font-style: italic;
 }
 
 .email{
@@ -338,14 +348,17 @@
 }
 
 .foto-perfil{
+    border-radius: 0px 5px 0px 5px;
     background-color: var(--azul);
 }
 
 .foto-perfil img{
+    border-radius: 0px 5px 0px 0px;
     width: 100%;
 }
 
 .name{
+    border-radius: 0px 5px 0px 5px;
     width: 200px;
     height: 56px;
     padding-top: 10px;

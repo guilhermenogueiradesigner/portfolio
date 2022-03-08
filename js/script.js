@@ -1,4 +1,3 @@
-
 var home = document.getElementsByClassName("home");
 var logo = document.getElementsByClassName("logo");
 var hamburguer = document.getElementsByClassName("hamburguer");
@@ -87,6 +86,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Histórias da Aviação do Exército",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
+        tools: ["Adobe InDesign","Adobe Photoshop"],
         src: "img/trabalhos/1.jpg",
         src_group:[]
     },
@@ -95,6 +96,8 @@ const cards = [
         title: "eBook:<br>Exercícios Semanais",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "digital",
+        jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
+        tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
         src: "img/trabalhos/2.jpg",
         src_group: [
             "img/trabalhos/2a.jpg",
@@ -104,8 +107,10 @@ const cards = [
     {
         id: "3",
         title: "Moeda Comemorativa:<br>32 Anos da Base de Aviação de Taubaté",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para comemorar os 32 anos da BAvT, foram lançados diversos produtos.<br>Dentre eles, a moeda confeccionada pela TOCOIN, mostrando o símbolo da Base na frente e no verso uma mistura do antigo símbolo com a imagem do Vale do Paraíba, ainda com um arco das insígnias das Subunidades.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/3.jpg",
         src_group: [
             "img/trabalhos/3a.png",
@@ -118,6 +123,8 @@ const cards = [
         title: "Folder:<br>Centenário da Aviação Militar",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Diagramação","Vetorização"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/4.jpg",
         src_group: [
             "img/trabalhos/4a.jpg"
@@ -128,6 +135,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Capa da edição Nº 11",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Composição"],
+        tools: ["Adobe InDesign","Adobe Photoshop"],
         src: "img/trabalhos/5.jpg",
         src_group:[]
     },
@@ -136,6 +145,8 @@ const cards = [
         title: "Logotipo:<br>4ª Fest Suprir",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/6.jpg",
         src_group:[]
     },
@@ -144,6 +155,8 @@ const cards = [
         title: "Logotipo:<br>Vida Digital",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/7.jpg",
         src_group: [
             "img/trabalhos/7a.jpg",
@@ -155,6 +168,8 @@ const cards = [
         title: "Banner:<br>Histórico da Base de Aviação de Taubaté",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/8.jpg",
         src_group: [
             "img/trabalhos/8a.png",
@@ -166,6 +181,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Solenidades Militares",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/9.jpg",
         src_group:[]
     },
@@ -174,6 +191,8 @@ const cards = [
         title: "Diagramação, Capa e Ilustração:<br>Livro Voos Incomuns",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização","Ilustração"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/10.jpg",
         src_group: [
             "img/trabalhos/10a.jpg",
@@ -189,6 +208,8 @@ const cards = [
         title: "eBook:<br>Cinquenta Receitas com Aves",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "digital",
+        jobClass: ["Diagramação","Vetorização","Ilustração"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/11.jpg",
         src_group:[]
     },
@@ -197,6 +218,8 @@ const cards = [
         title: "Mapa de Orientação:<br>Você está aqui",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/12.jpg",
         src_group: [
             "img/trabalhos/12a.jpg",
@@ -208,6 +231,8 @@ const cards = [
         title: "Ilustração e modernização:<br>Símbolo da Rede Ferroviária Federal em Vespasiano Corrêa-RS",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/13.jpg",
         src_group: [
             "img/trabalhos/13a.png",
@@ -219,6 +244,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Divisão de Aeródromo",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização","Edição e Tratamento de Imagem"],
+        tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
         src: "img/trabalhos/14.jpg",
         src_group:[]
     },
@@ -227,6 +254,8 @@ const cards = [
         title: "Banner:<br>Serviço de Aprovisionamento",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/15.jpg",
         src_group:[]
     },
@@ -235,6 +264,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>33º Triatlo do Exército",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/16.jpg",
         src_group:[]
     },
@@ -243,6 +274,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Busca e Salvamento",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
+        tools: ["Adobe InDesign","Adobe Photoshop"],
         src: "img/trabalhos/17.jpg",
         src_group:[]
     },
@@ -251,6 +284,8 @@ const cards = [
         title: "Logotipo:<br>Blog Mais Pedagogia",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/18.jpg",
         src_group:[]
     },
@@ -259,6 +294,8 @@ const cards = [
         title: "Logotipo:<br>Aliados - Marketing Digital",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/19.jpg",
         src_group: [
             "img/trabalhos/19a.jpg",
@@ -270,6 +307,8 @@ const cards = [
         title: "Tabuleiro Magnético:<br>Game Effect Conflicting Causes",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "digital",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/20.jpg",
         src_group: [
             "img/trabalhos/20a.png",
@@ -281,6 +320,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Centro de Medicina de Aviação do Exército",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização","Edição e Tratamento de Imagem"],
+        tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
         src: "img/trabalhos/21.jpg",
         src_group:[]
     },
@@ -289,6 +330,8 @@ const cards = [
         title: "Capa do eBook:<br>Universo atrás da parede",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "digital",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/22.jpg",
         src_group:[]
     },
@@ -297,14 +340,18 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Plano de Emergência Aeronáutica em Aeródromo",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação"],
+        tools: ["Adobe InDesign"],
         src: "img/trabalhos/23.jpg",
         src_group:[]
     },
     {
         id: "24",
-        title: "Símbolo:<br>Histórico do 1º Batalhão Ferroviário",
+        title: "Símbolo Histórico:<br> 1º Batalhão Ferroviário",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Vetorização","Ilustração"],
+        tools: ["Adobe Illustrator"],
         src: "img/trabalhos/24.jpg",
         src_group: [
             "img/trabalhos/24a.jpg",
@@ -317,6 +364,8 @@ const cards = [
         title: "Informativo O Pilar da Aviação:<br>Sábado Aéreo",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "diagramacao",
+        jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
+        tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
         src: "img/trabalhos/25.jpg",
         src_group:[]
     },
@@ -325,6 +374,8 @@ const cards = [
         title: "eBook:<br>Receitas de Sucos Detox",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "digital",
+        jobClass: ["Diagramação","Vetorização"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/26.jpg",
         src_group:[]
     },
@@ -333,6 +384,8 @@ const cards = [
         title: "Folder:<br>Incorporação do Efetivo Variável",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
+        jobClass: ["Diagramação","Vetorização","Ilustração"],
+        tools: ["Adobe InDesign","Adobe Illustrator"],
         src: "img/trabalhos/27.jpg",
         src_group: [
             "img/trabalhos/27a.jpg",
@@ -366,6 +419,8 @@ let openCard = (cardId) => {
     let cardInfo = document.createElement("div");
     let infoTitle = document.createElement("h2");
     let infoDescription = document.createElement("p");
+    let infoJobClass = document.createElement("p");
+    let infoTools = document.createElement("p");
     let info = cards.find((card) => card.id == cardId);
     let imgGroup = document.createElement("div");
 
@@ -384,13 +439,23 @@ let openCard = (cardId) => {
 
     cardInfo.appendChild(infoTitle);
     cardInfo.appendChild(infoDescription);
+    cardInfo.appendChild(infoJobClass);
+    cardInfo.appendChild(infoTools);
 
     cardInfo.setAttribute("class","card-info");
     infoTitle.setAttribute("class","info-title");
     infoDescription.setAttribute("class","info-description");
+    infoJobClass.setAttribute("class","info-job-class");
+    infoTools.setAttribute("class","info-tools");
 
     infoTitle.innerHTML = info.title;
     infoDescription.innerHTML = info.description;
+    infoJobClass.innerHTML = info.jobClass.reduce(function (prev,classItem) {
+        return prev + '<br>' + classItem;
+    }, "<b>Tipos de Trabalho:</b>");
+    infoTools.innerHTML = info.tools.reduce(function (prev,toolItem) {
+        return prev + '<br>' + toolItem;
+    }, "<b>Ferramentas Utilizadas:</b>");
 
     //Criando grupo de outras imagens do projeto  
     for (const src_img of info.src_group) {
