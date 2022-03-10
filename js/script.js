@@ -19,6 +19,15 @@ var currentJobType = "all";
 var currentCardId = "";
 var openCardState = false;
 
+//Tela de Pré-carregamento
+let loading = () => {
+    let preLoad = document.getElementsByClassName("pre-load");
+    let content = document.getElementsByClassName("content");
+
+    preLoad[0].style.display = "none";
+    content[0].style.display = "block";
+};
+
 //Menu mobile
 const mobileMenu = () => {
     
