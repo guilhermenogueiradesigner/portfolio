@@ -88,7 +88,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Photoshop"],
-        src: "img/trabalhos/1.jpg",
+        src: "img/trabalhos/1.webp",
         src_group:[]
     },
     {
@@ -98,10 +98,10 @@ const cards = [
         jobType: "digital",
         jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
-        src: "img/trabalhos/2.jpg",
+        src: "img/trabalhos/2.webp",
         src_group: [
-            "img/trabalhos/2a.jpg",
-            "img/trabalhos/2b.jpg"
+            "img/trabalhos/2a.webp",
+            "img/trabalhos/2b.webp"
         ]
     },
     {
@@ -111,11 +111,11 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/3.jpg",
+        src: "img/trabalhos/3.webp",
         src_group: [
-            "img/trabalhos/3a.png",
-            "img/trabalhos/3b.png",
-            "img/trabalhos/3c.jpg"
+            "img/trabalhos/3a.webp",
+            "img/trabalhos/3b.webp",
+            "img/trabalhos/3c.webp"
         ]
     },
     {
@@ -125,9 +125,9 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/4.jpg",
+        src: "img/trabalhos/4.webp",
         src_group: [
-            "img/trabalhos/4a.jpg"
+            "img/trabalhos/4a.webp"
         ]
     },
     {
@@ -137,7 +137,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Composição"],
         tools: ["Adobe InDesign","Adobe Photoshop"],
-        src: "img/trabalhos/5.jpg",
+        src: "img/trabalhos/5.webp",
         src_group:[]
     },
     {
@@ -147,7 +147,7 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/6.jpg",
+        src: "img/trabalhos/6.webp",
         src_group:[]
     },
     {
@@ -157,10 +157,10 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/7.jpg",
+        src: "img/trabalhos/7.webp",
         src_group: [
-            "img/trabalhos/7a.jpg",
-            "img/trabalhos/7b.png"
+            "img/trabalhos/7a.webp",
+            "img/trabalhos/7b.webp"
         ]
     },
     {
@@ -170,10 +170,10 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/8.jpg",
+        src: "img/trabalhos/8.webp",
         src_group: [
-            "img/trabalhos/8a.png",
-            "img/trabalhos/8b.png"
+            "img/trabalhos/8a.webp",
+            "img/trabalhos/8b.webp"
         ]
     },
     {
@@ -183,7 +183,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/9.jpg",
+        src: "img/trabalhos/9.webp",
         src_group:[]
     },
     {
@@ -193,14 +193,14 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização","Ilustração"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/10.jpg",
+        src: "img/trabalhos/10.webp",
         src_group: [
-            "img/trabalhos/10a.jpg",
-            "img/trabalhos/10b.jpg",
-            "img/trabalhos/10c.jpg",
-            "img/trabalhos/10d.jpg",
-            "img/trabalhos/10e.jpg",
-            "img/trabalhos/10f.jpg"
+            "img/trabalhos/10a.webp",
+            "img/trabalhos/10b.webp",
+            "img/trabalhos/10c.webp",
+            "img/trabalhos/10d.webp",
+            "img/trabalhos/10e.webp",
+            "img/trabalhos/10f.webp"
         ]
     },
     {
@@ -210,7 +210,7 @@ const cards = [
         jobType: "digital",
         jobClass: ["Diagramação","Vetorização","Ilustração"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/11.jpg",
+        src: "img/trabalhos/11.webp",
         src_group:[]
     },
     {
@@ -220,10 +220,10 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/12.jpg",
+        src: "img/trabalhos/12.webp",
         src_group: [
-            "img/trabalhos/12a.jpg",
-            "img/trabalhos/12b.jpg"
+            "img/trabalhos/12a.webp",
+            "img/trabalhos/12b.webp"
         ]
     },
     {
@@ -233,10 +233,10 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/13.jpg",
+        src: "img/trabalhos/13.webp",
         src_group: [
-            "img/trabalhos/13a.png",
-            "img/trabalhos/13b.jpg"
+            "img/trabalhos/13a.webp",
+            "img/trabalhos/13b.webp"
         ]
     },
     {
@@ -246,7 +246,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
-        src: "img/trabalhos/14.jpg",
+        src: "img/trabalhos/14.webp",
         src_group:[]
     },
     {
@@ -256,7 +256,7 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/15.jpg",
+        src: "img/trabalhos/15.webp",
         src_group:[]
     },
     {
@@ -266,7 +266,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/16.jpg",
+        src: "img/trabalhos/16.webp",
         src_group:[]
     },
     {
@@ -276,7 +276,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Photoshop"],
-        src: "img/trabalhos/17.jpg",
+        src: "img/trabalhos/17.webp",
         src_group:[]
     },
     {
@@ -286,7 +286,7 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/18.jpg",
+        src: "img/trabalhos/18.webp",
         src_group:[]
     },
     {
@@ -296,10 +296,10 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/19.jpg",
+        src: "img/trabalhos/19.webp",
         src_group: [
-            "img/trabalhos/19a.jpg",
-            "img/trabalhos/19b.png"
+            "img/trabalhos/19a.webp",
+            "img/trabalhos/19b.webp"
         ]
     },
     {
@@ -309,10 +309,10 @@ const cards = [
         jobType: "digital",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/20.jpg",
+        src: "img/trabalhos/20.webp",
         src_group: [
-            "img/trabalhos/20a.png",
-            "img/trabalhos/20b.png"
+            "img/trabalhos/20a.webp",
+            "img/trabalhos/20b.webp"
         ]
     },
     {
@@ -322,7 +322,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
-        src: "img/trabalhos/21.jpg",
+        src: "img/trabalhos/21.webp",
         src_group:[]
     },
     {
@@ -332,7 +332,7 @@ const cards = [
         jobType: "digital",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/22.jpg",
+        src: "img/trabalhos/22.webp",
         src_group:[]
     },
     {
@@ -342,7 +342,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação"],
         tools: ["Adobe InDesign"],
-        src: "img/trabalhos/23.jpg",
+        src: "img/trabalhos/23.webp",
         src_group:[]
     },
     {
@@ -352,11 +352,11 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/24.jpg",
+        src: "img/trabalhos/24.webp",
         src_group: [
-            "img/trabalhos/24a.jpg",
-            "img/trabalhos/24b.jpg",
-            "img/trabalhos/24c.jpg",
+            "img/trabalhos/24a.webp",
+            "img/trabalhos/24b.webp",
+            "img/trabalhos/24c.webp",
         ]
     },
     {
@@ -366,7 +366,7 @@ const cards = [
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
-        src: "img/trabalhos/25.jpg",
+        src: "img/trabalhos/25.webp",
         src_group:[]
     },
     {
@@ -376,7 +376,7 @@ const cards = [
         jobType: "digital",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/26.jpg",
+        src: "img/trabalhos/26.webp",
         src_group:[]
     },
     {
@@ -386,10 +386,10 @@ const cards = [
         jobType: "grafico",
         jobClass: ["Diagramação","Vetorização","Ilustração"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
-        src: "img/trabalhos/27.jpg",
+        src: "img/trabalhos/27.webp",
         src_group: [
-            "img/trabalhos/27a.jpg",
-            "img/trabalhos/27b.jpg"
+            "img/trabalhos/27a.webp",
+            "img/trabalhos/27b.webp"
         ]
     }
 ]
@@ -670,7 +670,7 @@ let msg = [
 ];
 
 msg.map(msg => { 
-   
+
     let msgCard = document.createElement("div");
     let msgText = document.createElement("p");
     let msgClient = document.createElement("h4");
@@ -691,6 +691,3 @@ msg.map(msg => {
 
     msgGroup[0].appendChild(msgCard);    
 });
-
-
-
