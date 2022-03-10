@@ -19,13 +19,7 @@ var currentJobType = "all";
 var currentCardId = "";
 var openCardState = false;
 
-//Tela de Pré-carregamento
-let loading = () => {
-    alert("Totalmente carregado!");
-};
-
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
     let preLoad = document.getElementsByClassName("pre-load");
     let content = document.getElementsByClassName("content");
 

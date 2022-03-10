@@ -15,10 +15,6 @@
     color: var(--cinza);
 }
 
-body{
-    
-}
-
 .pre-load{
     align-items: center;
     display: flex;
@@ -27,7 +23,7 @@ body{
 
 .load-box{
     animation: is-rotating 1s infinite;
-    border: 6px solid var(--cinza-bg);
+    border: 3px solid var(--cinza-bg);
     border-top-color: var(--azul);
     border-radius: 50%;
     height: 50px;
