@@ -9,7 +9,8 @@ var diagramacao = document.getElementsByClassName("diagramacao");
 var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
-var changeBtn = document.getElementsByClassName("change-btn");
+var changeBtnTop = document.getElementsByClassName("change-btn-top");
+var changeBtnBottom = document.getElementsByClassName("change-btn-bottom");
 var sobrePage = document.getElementsByClassName("sobre-page");
 var skills = document.getElementsByClassName("skills");
 var msgGroup = document.getElementsByClassName("msg-group");
@@ -73,7 +74,7 @@ const closedMenu = () => {
     
     menu[0].style.display = "none";
 
-    home[0].style.height = "50px";
+    home[0].style.height = "60px";
     home[0].style.flexDirection = "row";
     home[0].style.justifyContent = "space-between";
     home[0].style.alignItens = "center";
@@ -92,7 +93,7 @@ const cards = [
     {
         id: "1",
         title: "Informativo O Pilar da Aviação:<br>Histórias da Aviação do Exército",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para a capa da matéria sobre o Sargento Vasques foi usada sua foto em frente à aeronave, com recorte, luz e sombra para destacar a partir da profundidade os elementos da composição.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Photoshop"],
@@ -102,7 +103,7 @@ const cards = [
     {
         id: "2",
         title: "eBook:<br>Exercícios Semanais",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para esse projeto, foi feita a escolha de cores vibrantes simbolizando energia em contraste com o preto e o uso de formas representando movimento e velocidade.<br><br>Além da foto principal, também foi criada uma ilustração para representar a posição.<br><br>Esse é mais um projeto de redesign para eBooks PLR, que são conteúdos com direito de revenda, normalmente em formato de texto .doc que recebem uma melhora estética e correta disposição de informações a fim de valorizar o produto antes de sua comercialização.",
         jobType: "digital",
         jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
@@ -115,7 +116,7 @@ const cards = [
     {
         id: "3",
         title: "Moeda Comemorativa:<br>32 Anos da Base de Aviação de Taubaté",
-        description: "Para comemorar os 32 anos da BAvT, foram lançados diversos produtos.<br>Dentre eles, a moeda confeccionada pela TOCOIN, mostrando o símbolo da Base na frente e no verso uma mistura do antigo símbolo com a imagem do Vale do Paraíba, ainda com um arco das insígnias das Subunidades.",
+        description: "Para comemorar os 32 anos da BAvT, foram lançados diversos produtos.<br><br>Dentre eles, a moeda confeccionada pela TOCOIN a partir de um molde vetorizado, contendo na frente o atual símbolo da Base e no verso uma mistura do antigo símbolo com a imagem do Vale do Paraíba, ainda com um arco das insígnias das Sub-unidades.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -129,7 +130,7 @@ const cards = [
     {
         id: "4",
         title: "Folder:<br>Centenário da Aviação Militar",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Os eventos do Centenário da Aviação Militar, suas datas, produtos e imagens foram apresentados ao público por meio de um folder, produzido a partir de fotos e ilustrações de momentos históricos da Aviação.",
         jobType: "grafico",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -141,7 +142,7 @@ const cards = [
     {
         id: "5",
         title: "Informativo O Pilar da Aviação:<br>Capa da edição Nº 11",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Esta capa foi produzida como edição especial para o Centenário da Intendência.<br><br>A composição busca inserir um momento importante da formatura, onde o retrato do Marechal Bitencourt, patrono da Intendência, é guarnecido por militares da BAvT, envolto por uma moldura <i>art noveau</i> com detalhes de envelhecimento.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Composição"],
         tools: ["Adobe InDesign","Adobe Photoshop"],
@@ -151,7 +152,7 @@ const cards = [
     {
         id: "6",
         title: "Logotipo:<br>4ª Fest Suprir",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Todos os anos ocorre a comemoração do Dia da Intendência e a BAvT realizou a 4ª Fest Suprir, que recebeu um logotipo para divulgação do evento.<br><br>Entre as cores está o amarelo ouro, cor do símbolo da intendência e o marrom, que simboliza sua antiga importância na história.<br><br>Foi também ilustrado o <i>chopp</i>, tradicional bebida consumida nesse tipo de festividade.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -161,7 +162,7 @@ const cards = [
     {
         id: "7",
         title: "Logotipo:<br>Vida Digital",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: 'Criar um logotipo para um curso online sobre marketing digital é quase uma metalinguagem.<br><br>O método Vida Digital precisava de um símbolo que fosse reconhecido com um simples olhar e isso foi obtido a partir do gráfico em ascensão, representado pela junção da palavra "vida" e a flecha para cima.<br><br>Para a palavra "digital" foi usado um tom de verde que além de moderno, como é o ambiente digital, tem um bom contraste com o vermelho.',
         jobType: "grafico",
         jobClass: ["Vetorização"],
         tools: ["Adobe Illustrator"],
@@ -174,7 +175,7 @@ const cards = [
     {
         id: "8",
         title: "Banner:<br>Histórico da Base de Aviação de Taubaté",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "O Museu da Aviação do Exército contém alas especiais para cada unidade da Aviação e a BAvT conta com dois banners históricos.<br><br>No primeiro foram destacados os momentos marcantes da unidade e no segundo as subunidades, sua atuação e importância.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -187,7 +188,7 @@ const cards = [
     {
         id: "9",
         title: "Informativo O Pilar da Aviação:<br>Solenidades Militares",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para a seção das tradicionais formaturas militares, foi utilizado o método de design <i>flat</i> para o título da seção, com a representação da bandeira nacional por meio de formas geométricas.<br><br>A composição das matérias visou dar destaque para os pontos mais importantes de cada solenidade.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -197,7 +198,7 @@ const cards = [
     {
         id: "10",
         title: "Diagramação, Capa e Ilustração:<br>Livro Voos Incomuns",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: 'Inicialmente o projeto seria apenas a diagramação do livro Voos Incomuns, mas o envolvimento maior com o trabalho levou a um planejamento gráfico completo.<br><br>A capa foi produzida a partir de layout inicial do Pedro Amaral, com a criação da ilustração de uma aeronave e a disposição dos elementos.<br><br> O verso do livro contém um <i>ticket check in</i>, onde foi inserido o resumo do livro.<br><br>Também foi produzida uma ilustração que representa a abertura dos ailerons para direção e dos profundores para levantar a aeronave.',
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização","Ilustração"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -214,7 +215,7 @@ const cards = [
     {
         id: "11",
         title: "eBook:<br>Cinquenta Receitas com Aves",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Semelhante ao tradicional livro de receitas, mas em formato digital, este eBook faz parte de uma série culinária (neste caso receitas com aves), que contém uma barra lateral com título e à direita a seção da receita com uma foto principal, ingredientes e preparação.<br><br>Foram criados também ícones para representar o tempo de preparo e cozimento e o seu rendimento.<br><br>Esse é mais um projeto de redesign para eBooks PLR, que são conteúdos com direito de revenda, normalmente em formato de texto .doc que recebem uma melhora estética e correta disposição de informações a fim de valorizar o produto antes de sua comercialização.",
         jobType: "digital",
         jobClass: ["Diagramação","Vetorização","Ilustração"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -224,7 +225,7 @@ const cards = [
     {
         id: "12",
         title: "Mapa de Orientação:<br>Você está aqui",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "A área comercial da Aviação do Exército tinha um problema toda vez que os visitantes precisavam localizar seus destinos. O que atrapalhava o trânsito e ocupava o tempo dos militares da portaria. <br><br>Por isso foi criado um mapa na entrada contendo os números das residências e os principais pontos de interesse, de forma bem visual e o mais simples possível.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -236,8 +237,8 @@ const cards = [
     },
     {
         id: "13",
-        title: "Ilustração e modernização:<br>Símbolo da Rede Ferroviária Federal em Vespasiano Corrêa-RS",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        title: "Ilustração e modernização:<br>Símbolo da RFFSA",
+        description: "Para o redesign do símbolo da Rede Ferroviária Federal em Vespasiano Corrêa-RS, o objetivo era modernizar sem perder sua essência.<br><br>Inicialmente ilustrado à mão, o símbolo foi todo desenhado e se manteve assim para facilitar a criação de moldes para os monumentos que serão construídos na cidade.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -250,7 +251,7 @@ const cards = [
     {
         id: "14",
         title: "Informativo O Pilar da Aviação:<br>Divisão de Aeródromo",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "A seção da Divisão de Aeródromo recebeu uma estrutura própria pela peculiaridade de suas atividades.<br><br>O mesmo vermelho da Torre de Controle de Espaço Aéreo é o destaque da página.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
@@ -260,7 +261,7 @@ const cards = [
     {
         id: "15",
         title: "Banner:<br>Serviço de Aprovisionamento",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para as solenidades militares da BAvT foram criados banners que representam as subunidades.<br><br>Como no exemplo a cima, o banner contém o distintivo do serviço de aprovisionamento.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -270,7 +271,7 @@ const cards = [
     {
         id: "16",
         title: "Informativo O Pilar da Aviação:<br>33º Triatlo do Exército",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "O 33º Triathon do Exército foi realizado como a 4ª Etapa da Copa Triathlon Brasil e seção de atividades esportivas destacou o militar da BAvT que participou do evento.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -280,7 +281,7 @@ const cards = [
     {
         id: "17",
         title: "Informativo O Pilar da Aviação:<br>Busca e Salvamento",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "O treinamento de Busca e Salvamento da Divisão de Aeródromo recebeu uma edição especial, destacando os especialistas SAR.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Photoshop"],
@@ -290,7 +291,7 @@ const cards = [
     {
         id: "18",
         title: "Logotipo:<br>Blog Mais Pedagogia",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: 'Projeto em conjunto com a professora Yara Chaves para o blog educacional Mais Pedagogia.<br><br>A cor vermelha vibrante visa passar o sentimento de paixão que o assunto "educação" precisa representar.<br><br>O símbolo "mais" significa o quanto a educação precisa estar cada vez mais inserida na vida das pessoas.',
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -300,7 +301,7 @@ const cards = [
     {
         id: "19",
         title: "Logotipo:<br>Aliados - Marketing Digital",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: 'Marca criada para o treinamento Aliados - Marketing Digital com cor predominante dourada.<br><br>O símbolo principal representa um gráfico em ascenção e na palavra "aliados" a junção das letras passa a ideia de aliança.',
         jobType: "grafico",
         jobClass: ["Vetorização"],
         tools: ["Adobe Illustrator"],
@@ -313,7 +314,7 @@ const cards = [
     {
         id: "20",
         title: "Tabuleiro Magnético:<br>Game Effect Conflicting Causes",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Effect é um card game voltado para os amantes de estratégia e narrativa.<br><br>Esse projeto foi a criação do tabuleiro utilizado no game, onde os cards e demais itens serão colocados.<br><br>Foram também ilustrados ícones do tabuleiro.",
         jobType: "digital",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -326,7 +327,7 @@ const cards = [
     {
         id: "21",
         title: "Informativo O Pilar da Aviação:<br>Centro de Medicina de Aviação do Exército",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para destacar o novo jardim do Centro de Medicina, foi feita uma composição de imagens, de modo a mostrar os melhores pontos.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização","Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
@@ -336,7 +337,7 @@ const cards = [
     {
         id: "22",
         title: "Capa do eBook:<br>Universo atrás da parede",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Ilustração para a capa feita a mão, que posteriormente foi vetorizada.<br><br>Para esse projeto o Eduardo permitiu uma grande liberdade criativa e o desenho foi produzido a partir de uma conversa e um pequeno resumo sobre a história.",
         jobType: "digital",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -346,7 +347,7 @@ const cards = [
     {
         id: "23",
         title: "Informativo O Pilar da Aviação:<br>Plano de Emergência Aeronáutica em Aeródromo",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Matéria sobre o Treinamento do PEAA, projeto em que foi feito trabalho de fotografia e tratamento de imagem.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação"],
         tools: ["Adobe InDesign"],
@@ -355,7 +356,7 @@ const cards = [
     },
     {
         id: "24",
-        title: "Símbolo Histórico:<br> 1º Batalhão Ferroviário",
+        title: "Símbolo Histórico:<br>1º Batalhão Ferroviário",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
@@ -416,11 +417,11 @@ jobCard[0].remove();
 //Função para abrir um card
 let openCard = (cardId) => {
 
-    changeBtn[0].style.display = "flex";
-    changeBtn[0].style.justifyContent = "space-between";
+    changeBtnTop[0].style.display = "flex";
+    changeBtnTop[0].style.justifyContent = "space-between";
 
-    changeBtn[1].style.display = "flex";
-    changeBtn[1].style.justifyContent = "space-between";
+    changeBtnBottom[0].style.display = "flex";
+    changeBtnBottom[0].style.justifyContent = "space-between";
     
     openedCard = document.getElementById(cardId);
 
@@ -508,7 +509,8 @@ let viewCardByjobType = (jobType) => {
 
     //Esconde página Sobre se estiver aberta
     sobrePage[0].style.display = "none";
-    changeBtn[0].style.display = "none";
+    changeBtnTop[0].style.display = "none";
+    changeBtnBottom[0].style.display = "none";
     jobs[0].style.display = "flex";
 
     //Esconde card aberto anteriormente se houver.
@@ -578,14 +580,13 @@ let viewAbout = () => {
     }
     
 
-    changeBtn[0].style.display = "none";
-    changeBtn[1].style.display = "none";
+    changeBtnTop[0].style.display = "none";
+    changeBtnBottom[0].style.display = "none";
 
     jobs[0].style.display = "none";
     sobrePage[0].style.display = "flex";
 
     sobrePage[0].style.marginTop = "50px";
-    sobrePage[0].style.marginBottom = "50px";
     sobrePage[0].style.marginLeft = "10%";
     sobrePage[0].style.marginRight = "10%";
 
