@@ -645,7 +645,7 @@ infoSkills.map(skill => {
     clone.children[0].innerHTML = skill.name;
 
     for(let i = 0; i < skill.level; i++) {
-        clone.children[1].children[i].style.backgroundColor = "#1f2041";    
+        clone.children[1].children[i].style.backgroundColor = "#43b7ff";    
     }
 
     skills[0].appendChild(clone);
