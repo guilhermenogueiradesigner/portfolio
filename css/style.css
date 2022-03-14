@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
     height: 60px;
-    width: 200px;
+    width: 20%;
     background-color: var(--cinza);
 }
 
@@ -138,6 +138,9 @@
     margin-left: 20px;
     font-weight: 300;
     font-size: 20px;
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
 }
 
 .sobre:hover{
@@ -154,6 +157,9 @@
     margin-left: 20px;
     font-weight: 300;
     font-size: 20px;
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
 }
 
 .digital:hover{
@@ -170,6 +176,9 @@
     margin-left: 20px;
     font-weight: 300;
     font-size: 20px;
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
 }
 
 .grafico:hover{
@@ -187,6 +196,9 @@
     margin-left: 20px;
     font-weight: 300;
     font-size: 20px;
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
 }
 
 .diagramacao:hover{
@@ -250,6 +262,18 @@
     padding-left: 5px;
 }
 
+.back img{
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+}
+
+.back:hover img{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 .next{
     display: flex;
     flex-direction: row;
@@ -260,6 +284,18 @@
 
 .next h3{
     padding-right: 5px;
+}
+
+.next img{
+    transition: ease-in 0.1s;
+    -webkit-transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+}
+
+.next:hover img{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .jobs{
@@ -453,25 +489,36 @@
 }
 
 .foto-perfil{
-    border-radius: 0px 5px 0px 5px;
     background-color: var(--azul2);
 }
 
 .foto-perfil img{
-    border-radius: 0px 5px 0px 0px;
     width: 100%;
 }
 
-.name{
-    border-radius: 0px 5px 0px 5px;
+.name-left{
+    z-index: 1;
+    background-color: var(--cinza);
+    border-left: double 15px var(--azul2);
     width: 200px;
     height: 56px;
+    margin-left: 10px;
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+.name{
+    z-index: 1000;
+    position: absolute;
     padding-top: 10px;
-    background-color: var(--cinza);
+    width: 200px;
+    height: 56px;
 }
 
 .name p{
-    padding-left: 10px;
+    font-size: 14px;
+    padding-left: 40px;
     color: white;
 }
 
@@ -512,7 +559,7 @@
     width: 18%;
     height: 5px;
     border-radius: 5px;
-    background-color: #868686;
+    background-color: #b6b5b5;
 }
 
 .msg-group{

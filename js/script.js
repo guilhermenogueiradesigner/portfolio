@@ -4,9 +4,9 @@ var hamburguer = document.getElementsByClassName("hamburguer");
 var menu = document.getElementsByClassName("menu");
 var menuItens = document.getElementsByClassName("item");
 var sobre = document.getElementsByClassName("sobre");
+var digital = document.getElementsByClassName("digital");
 var grafico = document.getElementsByClassName("grafico");
 var diagramacao = document.getElementsByClassName("diagramacao");
-var frontEnd = document.getElementsByClassName("front-end");
 var jobs = document.getElementsByClassName("jobs");
 var jobCard = document.getElementsByClassName("job-card");
 var changeBtnTop = document.getElementsByClassName("change-btn-top");
@@ -53,17 +53,19 @@ const mobileMenu = () => {
     sobre[0].style.textAlign = "center";
     sobre[0].style.margin = "0 auto";
     sobre[0].style.marginBottom = "10px";
-    
+
+    digital[0].style.textAlign = "center";
+    digital[0].style.margin = "0 auto"; 
+    digital[0].style.marginBottom = "10px";
+
     grafico[0].style.textAlign = "center";
     grafico[0].style.margin = "0 auto";
     grafico[0].style.marginBottom = "10px";
     
     diagramacao[0].style.textAlign = "center";
     diagramacao[0].style.margin = "0 auto";
-    diagramacao[0].style.marginBottom = "10px";
 
-    frontEnd[0].style.textAlign = "center";
-    frontEnd[0].style.margin = "0 auto"; 
+    
 
     hamburguer[0].setAttribute("onclick","closedMenu()");
 
@@ -357,7 +359,7 @@ const cards = [
     {
         id: "24",
         title: "Símbolo Histórico:<br>1º Batalhão Ferroviário",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Como forma de preservar o patrimônio histórico da cidade de Vespasiano Corrêa - RS, o símbolo do 1º Batalhão Ferroviário recebeu um projeto de criação do molde para construção e revitalização de monumentos em sua homenagem.<br><br>Além da vetorização do símbolo, houve um cuidado maior para manter as proporções reais e assim criar uma padronização em desenho técnico com cotagem.",
         jobType: "grafico",
         jobClass: ["Vetorização","Ilustração"],
         tools: ["Adobe Illustrator"],
@@ -371,7 +373,7 @@ const cards = [
     {
         id: "25",
         title: "Informativo O Pilar da Aviação:<br>Sábado Aéreo",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Para o retorno do tradicional Sábado Aéreo, dia em que a população pode visitar a Aviação do Exército, foi criada uma seção especial destacando as atividades e principalmente a apresentação da Esquadrilha da Fumaça.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
         jobType: "diagramacao",
         jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
         tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
@@ -381,7 +383,7 @@ const cards = [
     {
         id: "26",
         title: "eBook:<br>Receitas de Sucos Detox",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Semelhante ao eBook de receitas com aves, as informações foram estruturadas para facilitar o entendimento do cliente quanto aos ingredientes e o modo de preparo dos sucos, sempre com uma imagem ilustrativa.<br><br>Esse é mais um projeto de redesign para eBooks PLR, que são conteúdos com direito de revenda, normalmente em formato de texto .doc que recebem uma melhora estética e correta disposição de informações a fim de valorizar o produto antes de sua comercialização.",
         jobType: "digital",
         jobClass: ["Diagramação","Vetorização"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -391,7 +393,7 @@ const cards = [
     {
         id: "27",
         title: "Folder:<br>Incorporação do Efetivo Variável",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "Todos os anos, a incorporação dos novos recrutas geravam dúvidas comuns a eles e seus familiares que precisavam ser bem orientados.<br><br>Para facilitar esse processo, foi criado um folder com informações importantes e ilustrações.",
         jobType: "grafico",
         jobClass: ["Diagramação","Vetorização","Ilustração"],
         tools: ["Adobe InDesign","Adobe Illustrator"],
@@ -645,7 +647,7 @@ infoSkills.map(skill => {
     clone.children[0].innerHTML = skill.name;
 
     for(let i = 0; i < skill.level; i++) {
-        clone.children[1].children[i].style.backgroundColor = "#43b7ff";    
+        clone.children[1].children[i].style.backgroundColor = "#707070";    
     }
 
     skills[0].appendChild(clone);

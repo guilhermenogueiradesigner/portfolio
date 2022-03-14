@@ -1,3 +1,157 @@
+@media screen and (min-width:4001px){
+
+    .logo-bg-left{
+        width: 12%;
+    }
+
+    .jobs{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .jobs .job-card img{
+        width: 800px;
+        height: 1131px;
+        border-radius: 10px;
+    }
+
+    .jobs .job-opened-card img{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width:4000px){
+
+    .logo-bg-left{
+        width: 12%;
+    }
+
+    .jobs{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .jobs .job-card img{
+        width: 600px;
+        height: 848px;
+        border-radius: 10px;
+    }
+
+    .jobs .job-opened-card img{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .change-btn-top{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .change-btn-bottom{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .perfil{
+        width: 300px;
+    }
+
+    .foto-perfil{
+        width: 300px;
+    }
+
+    .name-left{
+        width: 100%;
+    }
+
+    .name{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:2000px){
+    
+    .logo-bg-left{
+        width: 15%;
+    }
+
+    .jobs{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .jobs .job-card img{
+        width: 300px;
+        height: fit-content;
+        border-radius: 7px;
+    }
+
+    .jobs .job-opened-card img{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .change-btn-top{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .change-btn-bottom{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .perfil{
+        width: 200px;
+    }
+
+    .foto-perfil{
+        width: 200px;
+    }
+
+    .name-left{
+        width: 100%;
+    }
+
+    .name{
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width:1400px){
+   
+    .jobs{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .jobs .job-card img{
+        width: 300px;
+        height: 425px;
+        border-radius: 5px;
+        -webkit-transition: ease-out 0.2s;
+        -moz-transition: ease-out 0.2s;
+        transition: ease-out 0.2s;
+    }
+
+    .change-btn-top{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .change-btn-bottom{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 @media screen and (max-width:1000px){
     
     .menu{
@@ -17,6 +171,16 @@
         border-radius: 5px;
     }
 
+    .change-btn-top{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .change-btn-bottom{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 }
 
 @media screen and (max-width:720px){
@@ -26,12 +190,15 @@
     }
 
     .jobs{
+        margin-left: 10%;
+        margin-right: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }  
     
     .jobs .job-card img{
+        width: 100%;
         max-width: 100%;
         height: fit-content;
         max-height: fit-content;
@@ -66,8 +233,11 @@
     }
 
     .name{
-        width: 100%;
         padding-left: 5px;
+    }
+
+    .name-left{
+        width: 100%;
     }
 
     .resumo{
@@ -145,6 +315,10 @@
 
 @media screen and (max-width:420px){
     
+    .logo-bg-left{
+        width: 30%;
+    }
+
     .home{
         height: 60px;
         display: flex;
@@ -234,6 +408,10 @@
 }
 
 @media screen and (max-width:270px){
+    
+    .logo-bg-left{
+        width: 25%;
+    }
     
     .logo-bg{
         width: 40%;
