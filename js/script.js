@@ -402,43 +402,6 @@ const cards = [
             "img/trabalhos/27a.webp",
             "img/trabalhos/27b.webp"
         ]
-    },
-    {
-        id: "28",
-        title: "Informativo O Pilar da Aviação:<br>Histórias da Aviação do Exército",
-        description: "Para a capa da matéria sobre o Sargento Vasques foi usada sua foto em frente à aeronave, com recorte, luz e sombra para destacar a partir da profundidade os elementos da composição.<br><br>Esse trabalho faz parte do Informativo: O Pilar da Aviação, revista digital com edições trimestrais, projeto no qual tive a honra de participar desde a sua criação, planejamento gráfico, diagramação, fotografia e edição de 2018 até 2022.",
-        jobType: "diagramacao",
-        jobClass: ["Diagramação","Edição e Tratamento de Imagem"],
-        tools: ["Adobe InDesign","Adobe Photoshop"],
-        src: "img/trabalhos/28.webp",
-        src_group:[]
-    },
-    {
-        id: "29",
-        title: "eBook:<br>Exercícios Semanais",
-        description: "Para esse projeto, foi feita a escolha de cores vibrantes simbolizando energia em contraste com o preto e o uso de formas representando movimento e velocidade.<br><br>Além da foto principal, também foi criada uma ilustração para representar a posição.<br><br>Esse é mais um projeto de redesign para eBooks PLR, que são conteúdos com direito de revenda, normalmente em formato de texto .doc que recebem uma melhora estética e correta disposição de informações a fim de valorizar o produto antes de sua comercialização.",
-        jobType: "digital",
-        jobClass: ["Diagramação","Vetorização", "Edição e Tratamento de Imagem"],
-        tools: ["Adobe InDesign","Adobe Illustrator","Adobe Photoshop"],
-        src: "img/trabalhos/29.webp",
-        src_group: [
-            "img/trabalhos/29a.webp",
-            "img/trabalhos/29b.webp"
-        ]
-    },
-    {
-        id: "30",
-        title: "Moeda Comemorativa:<br>32 Anos da Base de Aviação de Taubaté",
-        description: "Para comemorar os 32 anos da BAvT, foram lançados diversos produtos.<br><br>Dentre eles, a moeda confeccionada pela TOCOIN a partir de um molde vetorizado, contendo na frente o atual símbolo da Base e no verso uma mistura do antigo símbolo com a imagem do Vale do Paraíba, ainda com um arco das insígnias das Sub-unidades.",
-        jobType: "grafico",
-        jobClass: ["Vetorização","Ilustração"],
-        tools: ["Adobe Illustrator"],
-        src: "img/trabalhos/30.webp",
-        src_group: [
-            "img/trabalhos/30a.webp",
-            "img/trabalhos/30b.webp",
-            "img/trabalhos/30c.webp"
-        ]
     }
 ]
 
