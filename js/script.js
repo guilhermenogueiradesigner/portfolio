@@ -405,7 +405,7 @@ const cards = [
     }
 ]
 
-cards.reverse();
+//cards.reverse();
 
 //Clonando job cards
 cards.map(job => { 
