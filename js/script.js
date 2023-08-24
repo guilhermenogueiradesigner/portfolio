@@ -442,6 +442,8 @@ const cards = [
     }
 ]
 
+cards.reverse();
+
 //Clonando job cards
 cards.map(job => { 
         const clone = jobCard[0].cloneNode(true);
